@@ -6,14 +6,15 @@ on:
     branches:
       - main
       - dev
-      - feat\**
+      - feat/**
+  workflow_dispatch:
   push:
     branches:
       - main
       - dev
-      - feat\**
+      - feat/**
     paths-ignore:
-      - '-github\workflows\*'
+      - '.github/workflows/*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
