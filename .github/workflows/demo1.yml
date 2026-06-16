@@ -7,7 +7,6 @@ on:
       - main
       - dev
       - feat/**
-  workflow_dispatch:
   push:
     branches:
       - main
